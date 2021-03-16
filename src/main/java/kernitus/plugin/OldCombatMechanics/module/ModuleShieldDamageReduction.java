@@ -9,6 +9,8 @@ import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityDamageEvent.DamageCause;
 import org.bukkit.event.entity.EntityDamageEvent.DamageModifier;
 
+import kernitus.plugin.OldCombatMechanics.utilities.Messenger;
+
 /**
  * Allows customising the shield damage reduction percentages.
  */
@@ -33,7 +35,7 @@ public class ModuleShieldDamageReduction extends Module {
     }
 
 
-    @EventHandler(priority = EventPriority.LOWEST)
+    @EventHandler(priority = EventPriority.HIGHEST)
     public void onHit(EntityDamageByEntityEvent e){
         Entity entity = e.getEntity();
 
