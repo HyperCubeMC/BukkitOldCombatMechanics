@@ -150,18 +150,10 @@ old-tool-damage:
     NETHERITE_HOE: 1
 
 sword-blocking:
-  # This is to allow players to block with swords again, by getting a shield while they hold right click with a sword
+  # This is to allow players to block with swords again, by getting a shield while they hold a sword
+  # Use paper with shield-blocking-delay: 1 for best results
   enabled: true
   worlds: []
-  # How often, in ticks, OCM should check if the player is still blocking with a shield, and remove it if not
-  # If this is too fast the player will have their shield disappear before they're able to block again causing a slight delay
-  # If this is too slow players will have a shield in their hand well after they've stopped blocking
-  # 20 ticks = 1 second
-  restoreDelay: 40
-  # List of items that holding in the offhand while right-clicking with a sword doesn't trigger blocking e.g. bow
-  noBlockingItems: []
-  # Whether the above list should act as a blacklist (i.e. only items listed stop the blocking mechanic)
-  blacklist: true
 
 shield-damage-reduction:
   # This module allows changing the damage reduction behaviour of shields
