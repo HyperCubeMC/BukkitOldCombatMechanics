@@ -31,10 +31,17 @@ public class DamageUtils {
      * @param p Player to perform checks on
      * @return Whether hit is critical
      */
-    public static boolean isCriticalHit(Player p){
+    public static boolean isCriticalHit(Player p) {
+//        try {
+//            Class.forName("com.destroystokyo.paper.PaperWorldConfig");
+//            org.bukkit.World world = p.getWorld();
+//            Object nmsWorld = world.getClass().getMethod("getHandle").invoke(world);
+//        } catch (ClassNotFoundException | NoSuchMethodException ignored) {}
+
+        // Removed !p.isSprinting() because you can critical hit while sprinting on 1.8
         return !p.isOnGround() && p.getFallDistance() > 0 &&
                 !p.getLocation().getBlock().isLiquid() &&
-                !p.isInsideVehicle() && !p.isSprinting() &&
+                !p.isInsideVehicle() &&
                 p.getActivePotionEffects().stream().noneMatch(pe -> pe.getType() == PotionEffectType.BLINDNESS);
     }
 }

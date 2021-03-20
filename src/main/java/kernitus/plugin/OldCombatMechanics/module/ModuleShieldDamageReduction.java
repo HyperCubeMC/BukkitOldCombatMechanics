@@ -9,8 +9,6 @@ import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityDamageEvent.DamageCause;
 import org.bukkit.event.entity.EntityDamageEvent.DamageModifier;
 
-import kernitus.plugin.OldCombatMechanics.utilities.Messenger;
-
 /**
  * Allows customising the shield damage reduction percentages.
  */
