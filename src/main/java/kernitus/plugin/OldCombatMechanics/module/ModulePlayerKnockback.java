@@ -62,7 +62,7 @@ public class ModulePlayerKnockback extends Module {
         if (!(event.getDamager() instanceof Player)) return;
         if (!(event.getEntity() instanceof Player)) return;
         if (!event.getCause().equals(EntityDamageEvent.DamageCause.ENTITY_ATTACK)) return;
-        if (event.getDamage(EntityDamageEvent.DamageModifier.BLOCKING) != 0) return;
+//        if (event.getDamage(EntityDamageEvent.DamageModifier.BLOCKING) != 0) return;
 
         Player attacker = (Player) event.getDamager();
         Player victim = (Player) event.getEntity();
