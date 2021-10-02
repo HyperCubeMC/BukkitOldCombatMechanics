@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>kernitus.plugin.OldCombatMechanics</groupId>
     <artifactId>OldCombatMechanics</artifactId>
-    <version>1.9.0</version>
+    <version>1.10.0</version>
     <name>OldCombatMechanics</name>
     <description>Implements pre-1.9 combat-related mechanics</description>
     <url>https://github.com/kernitus/BukkitOldCombatMechanics</url>
@@ -20,7 +20,7 @@
         </repository>
         <repository>
             <id>placeholderapi-repo</id>
-            <url>http://repo.extendedclip.com/content/repositories/placeholderapi/</url>
+            <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
         </repository>
         <repository>
             <id>local-file-repo</id>
@@ -34,8 +34,8 @@
     <dependencies>
         <dependency>
             <groupId>org.spigotmc</groupId>
-            <artifactId>spigot</artifactId>
-            <version>1.16.5-R0.1-SNAPSHOT</version>
+            <artifactId>spigot-api</artifactId>
+            <version>1.17-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
