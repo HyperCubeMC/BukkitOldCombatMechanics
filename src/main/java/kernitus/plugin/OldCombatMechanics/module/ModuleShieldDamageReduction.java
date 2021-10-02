@@ -56,7 +56,7 @@ public class ModuleShieldDamageReduction extends Module {
         }
     }
 
-    @EventHandler(priority = EventPriority.HIGHEST)
+    @EventHandler(priority = EventPriority.LOWEST)
     public void onHit(EntityDamageByEntityEvent e){
         Entity entity = e.getEntity();
 
